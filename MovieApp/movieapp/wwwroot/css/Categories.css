@@ -1,0 +1,58 @@
+
+
+
+
+/* ===================================== */
+/* Movies kategori bölümü */
+.col-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* İçeriği üstte hizala */
+    height: 100%;               /* Sütun yüksekliği ekranın tamamı */
+    right: 2%;
+    align-items: center;
+}
+
+.sectionOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* İçeriği üstte hizala */
+    gap: 1rem;
+    height: 100%;                 /* Üst kapsayıcıya tam yükseklik ver */
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Öğeleri sola hizala */
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.list-group .btn{
+    width: 120px;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    align-items: center !important;
+    border-radius: 15px;
+    margin: 2px;
+    padding: 10px;
+    display: flex;
+    background-color:rgb(73, 73, 73);
+    color: white;
+}
+.list-group .sectionName{
+    text-align: center;
+    justify-content: center;
+    gap: 2px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* ===================================== */
+
+
+/* ===================================== */
+/* ===================================== */

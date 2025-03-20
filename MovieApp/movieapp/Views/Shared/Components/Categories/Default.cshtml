@@ -1,0 +1,28 @@
+
+
+
+
+@model List<MovieType>
+
+@{
+    var length=Model.Count;
+}
+
+@for(var i=0; i<length;i+=2)
+{
+    <div class="row mb-1">
+        <div class="col-12 col-lg-6 p-0">
+            <div type="button" class="form-control cty">
+                @Model[i].TypeName
+            </div>
+        </div>
+        <div class="col-lg-6 p-0">
+            @if(i+1<length)
+            {
+                <div type="button" class="form-control cty">
+                    @Model[i+1].TypeName
+                </div>
+            }
+        </div>
+    </div>
+}

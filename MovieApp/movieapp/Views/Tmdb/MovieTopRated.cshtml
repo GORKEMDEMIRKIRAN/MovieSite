@@ -1,0 +1,121 @@
+
+
+
+
+@model ResultPage
+
+
+<div class="films-card">
+    <div class="row">
+        <div class="col-12">
+            @* Slider Region *@
+            @await Html.PartialAsync("_Slider",Model)
+        </div>
+        <div class="col-9 col-md-12 col-lg-9" id="filmsRegion">
+            @* ============================================================= *@
+            <div class="container" id="SectionInfo">
+                <h3>TOP RATED MOVIES</h3>
+            </div>
+            @* ============================================================= *@
+            <div class="row row-cols-sm-3 row-cols-md-4 row-cols-lg-5" id="cards">
+                @* ============ *@
+                @foreach(var item in Model.MovieTopRated){
+                    if(item.PosterPath != null)
+                    {
+                        <div class="col" type="button">
+                            <div class="card" style="background-image: url('@item.PosterPath');">
+                                <a asp-action="MovieDetails" asp-route-id="@item.Id">
+                                    <div class="point">
+                                        <p><i class="fa-solid fa-star"></i>@item.VoteAverage</p>
+                                    </div>
+                                    <div class="year">
+                                        <p><i class="fa-solid fa-star"></i>@item.ReleaseDate.Year</p>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <p>@item.Title</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    }
+                }
+                @* ============ *@
+            </div>
+            @* ============================================================= *@
+            @*pagination *@
+            <nav aria-label="Page navigation example">
+
+                <ul class="pagination">
+                    @* Eğer 3 eşit ve büyükse -2,+2 şeklinde butonları listeler 
+                        eğer son sayfaya 5 kala yakınsa son sayfadakileri listeler
+                        eğer 3'ten küçükse +4 şeklinde listeler.
+                    *@
+                    @if(Model.Page >=3)
+                    {
+                        @for(var i=Model.Page-2; i<=Model.Page+2 && i<= Model.TotalPages; i++)
+                        {
+                            if(i>0)
+                            {
+                                <li class="page-item @(i == Model.Page ? "active" : "")">
+                                    <a class="page-link btn btn-sm" asp-action="MovieTopRated" asp-route-page="@i">@i</a>
+                                </li>
+                            }
+                        }
+                    }
+                    else if(Model.Page >= Model.TotalPages-5){
+                        for(var i=Model.TotalPages -5; i<=Model.TotalPages; i++)
+                        {
+                            <li class="page-item @(i == Model.Page ? "active" : "")">
+                                <a class="page-link btn btn-sm" asp-action="MovieTopRated" asp-route-page="@i">@i</a>
+                            </li>
+                        }
+                    }else{
+                        if(Model.Page==1)
+                        {
+                            for(var i=Model.Page; i<=Model.Page+4 && i<=Model.TotalPages; i++)
+                            {
+                                <li class="page-item @(i == Model.Page ? "active" : "")">
+                                    <a class="page-link btn btn-sm" asp-action="MovieTopRated" asp-route-page="@i">@i</a>
+                                </li>
+                            }
+                        }else{
+                            for(var i=Model.Page-1; i<=Model.Page+3 && i<=Model.TotalPages; i++)
+                            {
+                                <li class="page-item @(i == Model.Page ? "active" : "")">
+                                    <a class="page-link btn btn-sm" asp-action="MovieTopRated" asp-route-page="@i">@i</a>
+                                </li>
+                            }
+                        }
+                    }
+                    @* ÖNCEKİ SAYFA *@
+                    @if(Model.Page>1)
+                    {
+                        <li class="page-item">
+                            <a class="page-link btn btn-sm" asp-action="MovieTopRated" asp-route-page="@(Model.Page - 1)">Previous</a>
+                        </li>
+                    }
+                    @* SONRAKI SAYFA *@
+                    @if(Model.Page<Model.TotalPages)
+                    {
+                        <li class="page-item">
+                            <a class="page-link btn btn-sm" asp-action="MovieTopRated" asp-route-page="@(Model.Page + 1)">Next</a>
+                        </li>
+                    }
+                    @* SON SAYFA *@
+                    <li class="page-item">
+                        <a class="page-link btn btn-sm" asp-action="MovieTopRated" asp-route-page="@(Model.TotalPages)">Son Sayfa</a>
+                    </li>
+
+                </ul>
+            </nav>
+            @* ============================================================= *@
+        </div>
+        <div class="col-3" id="CategoriesSection">
+            <div class="container sectionOne">
+                @await Html.PartialAsync("_tmdbCategories")
+                @await Html.PartialAsync("_tmdbTypeCategories",Model.alltypelist)
+            </div>
+        </div>
+    </div>
+</div>

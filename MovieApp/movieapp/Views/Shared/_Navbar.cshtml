@@ -1,0 +1,59 @@
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+    <div class="container navbarContainer">
+        @* ======================================================= *@
+        <a class="navbar-brand" asp-action="MoviePopular">
+            <i class="fa-solid fa-film"></i>
+        </a>
+        @* ======================================================= *@
+        <p class="h4">FASTFILM</p>
+        @* ======================================================= *@
+        <div class="collapse navbar-collapse">
+            <a href="#" id="house-icon">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Discovery</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-action="MoviePopular" class="nav-link">Films</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-action="SeriesPopular" class="nav-link">Series</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Years</a>
+                </li>
+            </ul>
+            <form action="" class="d-flex" id="search">
+                <input type="text" class="form-control" id="search-text">
+                <button type="button" class="btn" id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        
+        @* ======================================================= *@
+
+        <div class="buttons">
+            <div class="row">
+                <div class="col-6">
+                    <button type="button" class="btn btn-secondary btn-md">
+                        Register
+                    </button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-danger btn-md">
+                        Log In
+                    </button>
+                </div>
+            </div>
+        </div>
+        @* ======================================================= *@
+    </div>
+</nav>

@@ -1,0 +1,99 @@
+
+
+
+@model  ResultPage
+
+<div class="slider-container">
+
+    <div class="carousel slide" data-ride="carousel" id="carouselFilmSlider">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselFilmSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselFilmSlider" data-slide-to="1"></li>
+            <li data-target="#carouselFilmSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col">
+                        @if (Model.MoviePopular != null && Model.MoviePopular.Any())
+                        {
+                            @foreach (var item in Model.MoviePopular)
+                            {
+                                if(item.PosterPath != null)
+                                {
+                                    <img src="@item.PosterPath" alt="Movie Popular">
+                                }
+                                
+                            }
+                        }
+                        @if (Model.TvPopular != null && Model.TvPopular.Any())
+                        {
+                            @foreach (var item in Model.TvPopular)
+                            {
+                                if(item.PosterPath  != null)
+                                {
+                                    <img src="@item.PosterPath" alt="TV Popular">
+                                }
+                                
+                            }
+                        }
+                        @if (Model.MovieTopRated != null && Model.MovieTopRated.Any())
+                        {
+                            @foreach (var item in Model.MovieTopRated)
+                            {
+                                if(item.PosterPath != null)
+                                {
+                                    <img src="@item.PosterPath" alt="Movie Top Rated">
+                                }
+                            }
+                        }
+                        @if (Model.TvTopRated != null && Model.TvTopRated.Any())
+                        {
+                            
+                            @foreach (var item in Model.TvTopRated)
+                            {
+                                if(item.PosterPath != null)
+                                {
+                                    <img src="@item.PosterPath" alt="TV Top Rated">
+                                }
+                                
+                            }
+                        }
+                        @if(Model.GeneralMovieModel != null && Model.GeneralMovieModel.Any())
+                        {
+                            @foreach(var item in Model.GeneralMovieModel)
+                            {
+                                if(item.PosterPath !=null)
+                                {
+                                    <img src="@item.PosterPath">
+                                }
+                            }
+                        }
+                        @if(Model.GeneralTvModel != null && Model.GeneralTvModel.Any())
+                        {
+                            @foreach(var item in Model.GeneralTvModel)
+                            {
+                                if(item.PosterPath !=null)
+                                {
+                                    <img src="@item.PosterPath">
+                                }
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a href="#carouselFilmSlider" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+        <a href="#carouselFilmSlider" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span> 
+        </a>
+    </div>
+
+</div>
+

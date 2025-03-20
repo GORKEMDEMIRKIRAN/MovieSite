@@ -1,0 +1,249 @@
+
+
+
+
+
+
+/* ====================================== */
+/* MOVIE POSTER BÖLÜMÜ */
+#MovieDetail{
+    font-weight: 700;
+    background-color: rgb(82, 78, 78);
+    height: 800px;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+#MovieDetail .title{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#MovieDetail .poster{
+    width: 250px;
+    height: 428px;
+    border-radius: 25px;
+    background-size: cover; /* Resmin kutuyu tamamen kaplamasını sağlar */
+    background-position: center; /* Resmi ortalar */
+    background-repeat: no-repeat; /* Resmin tekrarlanmasını engeller */
+}
+
+.posterRegion .row{
+    display: flex; /* Flexbox ile düzeni sağlıyoruz */
+     /* Kartlar arasına boşluk ekliyoruz */
+    flex-wrap: wrap; /* Ekran daraldıkça satıra sığmayan öğeleri alt satıra alır */
+    margin-top: 2%;
+}
+
+#posterText{
+    background-color:rgb(71, 67, 71);
+    border-radius: 15px;
+    margin-left: 12%;
+    color: white;
+}
+
+
+
+/* ================= */
+#MovieDetail .IMDB{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    text-align: center;
+}
+#MovieDetail .ImbbSection{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border:1px solid orange;
+    text-justify: center;
+    color: orange;
+}
+#MovieDetail .ImdbText{
+    margin-left: 15px;
+}
+#MovieDetail .point{
+    font-size: 18px;
+    color: yellow;
+}
+/* =================== */
+#MovieDetail .info{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+#MovieDetail table{
+    border-collapse: separate; /* border-spacing'in çalışması için */
+    border-spacing: 0px 4px; /* Sütun (X) ve Satır (Y) boşluğu */
+}
+#MovieDetail #firstColumn{
+    text-align: start;
+    font-weight: 300;
+    color: white;
+    font-weight: 700;
+}
+#MovieDetail #secondColumn{
+    text-align: start;
+    font-weight: 400;
+    color: white;
+    background-color:rgb(66, 61, 61);
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* ====================================== */
+/* MOVIE WATCH BÖLÜMÜ */
+
+
+#MovieWatch{
+    background-color: rgb(82, 78, 78);
+    border-radius: 25px;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    min-height: 620px;
+    padding: 10px;
+}
+#MovieWatch #title{
+    font-size: 20px;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#MovieWatch #watchButtons{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgb(199, 230, 24);
+  
+}
+#MovieWatch #watchButtons .btn{
+    margin-left: 1%;
+    font-weight: 500;
+}
+
+#MovieWatch #videoContainer{
+    width: 100%;
+    height: 500px;
+}
+#MovieWatch #videoContainer{
+    width: 100%;
+    height: 500px;
+}
+
+#MovieWatch #youtubeFrame{
+    width: 100%;
+    height: 100% !important;
+}
+
+
+/* ====================================== */
+
+#Comments{
+    height: 60px;
+    background-color: rgb(82, 78, 78);
+    border-radius: 20px;
+    margin: 1%;
+    font-size: 20px;
+    color: white;
+}
+
+#Comments .title{
+    margin: 1%;
+    font-weight: 600;
+}
+/* ====================================== */
+
+#cardTwo {
+    height: 900px;
+}
+
+#cardFive {
+    height: 700px;
+}
+
+
+/* ====================================== */
+/* benzer film bölümlerine bakalım */
+#similarContainer{
+    width: 100%;
+    overflow-x: auto; /* Yatay scroll ekler */
+    white-space: nowrap; /* Kartları yan yana dizer */
+   
+}
+#similarContainer .scrollable-cards{
+    display:inline-flex;
+    gap: 5px;
+    flex-wrap: nowrap;/* Kartların alt satıra geçmesini engeller */
+}
+#similarContainer .poster{
+    width: 200px;
+    height: 300px;
+    border: 1px solid purple;
+    border-radius: 15px;
+    justify-content: center;
+    color:purple;
+    text-align: center;
+    position: relative;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Resmi ortalar */
+    
+}
+#similarContainer .point{
+    position:absolute;
+    color: yellow;
+    right:10px;
+    top: 10px;
+}
+#similarContainer .year{
+    position: absolute;
+    color: red;
+    left: 10px;
+    top: 10px;
+}
+#similarContainer .card-body{
+    bottom:0;
+    position: absolute;
+    color: purple;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+}
+/* bu şekilde  a etiketi kartın tamamını kaplar. */
+#similarContainer .poster a{
+    width: 100%;
+    height: 100%;
+}
+
+/* ====================================== */
+#creditContainer{
+    width: 100%;
+    overflow-x: auto; /* Yatay scroll ekler */
+    white-space: nowrap; /* Kartları yan yana dizer */
+}
+
+#creditContainer .scrollable-cards{
+    display:inline-flex;
+    gap: 5px;
+    flex-wrap: nowrap;/* Kartların alt satıra geçmesini engeller */
+
+}
+
+#creditContainer .title{
+    width: 150px;
+    height: 150px;
+
+}
+#creditContainer .card-body{
+    padding: 0px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
+    color: white;
+    background-color: rgb(235, 220, 13);
+
+}

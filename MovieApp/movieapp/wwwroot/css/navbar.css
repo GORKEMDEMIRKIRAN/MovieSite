@@ -1,0 +1,62 @@
+
+/* ================================= */
+#navbar{
+    font-size: 16px;
+    padding: 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius:25px;
+    margin-top:1%;
+    background-color: rgba(183, 62, 183, 0.635);
+    gap: 1%;
+}
+/* ================================= */
+/* icon */
+.navbar-brand{
+    font-size:28px;
+}
+/* site name */
+.h4{
+    color: yellow;
+    font-weight: 600;
+}
+/* ================================= */
+.navbarContainer{
+    gap: 0.5%;
+}
+/* ================================= */
+#navbar .collapse{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left:5%;
+    gap:10px;
+}
+
+#navbar .collapse #house-icon{
+    font-size: 20px;
+    color: rgb(255, 238, 3);
+}
+/* ================================= */
+#search #search{
+    margin-left: 5%;
+}
+
+#search #search-text{
+    border-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#search #search-btn{
+    border-radius: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: yellow;
+    color: rgb(254, 0, 233);
+}
+
+#search .buttons{
+    margin-left: 15px;
+}
+/* ================================= */
+
+
+

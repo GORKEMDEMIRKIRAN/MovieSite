@@ -1,0 +1,141 @@
+
+/* ======================================== */
+body{
+    margin: 2% 10%;
+    background-image: url('/Img/cinema.jpg');
+    background-size: cover; /*resmi tüm alanı kaplayacak şekilde ölçeklendirilir.*/
+    background-repeat: no-repeat; /*Resmi tekrar etmez*/
+    background-attachment: fixed; /*resmin sabit kalamsını sağlar.*/
+}
+
+/* ======================================== */
+
+#filmsRegion #SectionInfo{
+    margin-top: 3%;
+    justify-content: center;
+    text-align: start;
+    margin-left: 8%;
+    color: white;
+    font-weight: 400;
+}
+
+/* ======================================== */
+main{
+    background-color: rgb(111, 109, 109);
+    padding:5px;
+}
+/* ======================================== */
+.pagination{
+    justify-content: center;
+    gap: 4px;
+    margin-top: 9%;
+    margin-bottom: 3%;
+}
+.pagination .page-link{
+    background-color:grey;
+    border-radius: 15px;
+    color: white;
+    border: 1px solid wheat;
+}
+
+/* ======================================== */
+#cards{
+    margin-bottom: 20px;
+}
+
+#cards .col{
+    padding: 5px;
+    margin: 2px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+#cards .col .card-body{
+    position: absolute; /* posizyonu ayarlamak için*/
+    bottom: 0;           /* alt kenarını kartın alt kenarına sabitler.*/
+    width: 100%;        /* kart genişliğine sığmasını sağlar.*/
+    margin-top: auto;
+    font-size: 14px;
+    font-weight: 900;
+    color: rgb(254, 0, 182);
+
+}
+
+/* burada card kaplayacak şekilde a etiketini genişlettim. */
+#cards .card a{
+    width: 100%;
+    height: 100%;
+}
+
+#cards .card{
+    width: 600px;
+    height: 350px;
+    position: relative;  /* card ieçriğini hareket ettirmek için*/
+    background-size: cover;
+    background-position:center;
+    font-size: 18px;
+    text-align: start;
+    color:white;
+    border-radius: 30px;
+    opacity: 0.8;
+    border:1px solid black;
+    box-shadow: inset;
+}
+#cards .card .point{
+    color: yellow;
+    position: absolute;
+    right: 10px;
+    top: 10px; /* İsteğe bağlı, üst köşeye de yerleştirebilirsiniz */
+    font-size: 12px;
+}
+#cards .card .year{
+    color: red;
+    position: absolute;
+    left: 10px;
+    top: 10px; /* İsteğe bağlı, üst köşeye de yerleştirebilirsiniz */
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* ======================================== */
+
+.f1{
+    border: 3px solid orange !important;
+}
+.f2{
+    border: 1px solid rgb(203, 19, 179) !important;
+    font-size: medium;
+    font-weight: 500;
+}
+.f3{
+    border: 1px solid orange !important;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: rgb(11, 11, 11) !important;
+}
+.f4{
+    background-color: rgb(226, 158, 11);
+    font-weight: 500;
+    color:white;
+    font-size: 16px;
+}
+
+/* ======================================== */
+
+
+footer{
+    background-color: rgba(183, 62, 183, 0.635);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+footer .container{
+    padding: 20px;
+    font-weight: 800;
+}
+
+footer{
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-bottom: 1%;
+}
+/* ======================================== */

@@ -1,0 +1,235 @@
+
+
+
+
+@model  ResultPage
+
+@* =========================================================================================================== *@
+<div class="container" id="details">
+
+            <div class="row" id="cardOne">
+                <div class="col">
+                    @* -------------------------------------------------------------------------- *@
+                    <div id="MovieWatch"> 
+                        @* =============================================== *@
+                        <div id="title">
+                            Watch the @Model.MovieDetails.Title 
+                        </div>
+                        @* =============================================== *@
+                        <div id="watchButtons">
+                            <div class="btn">Trailer</div>
+                            <div class="btn">Watch</div>
+                        </div>
+                        @* =============================================== *@
+                        <div id="videoContainer">
+                                @foreach(var item in Model.MovieVideo.videoResults)
+                                {
+                                    if(item.Site == "YouTube")
+                                    {
+                                        <iframe id="youtubeFrame" 
+                                            src="https://www.@(item.Site).com/embed/@item.Key"
+                                            frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
+                                        break;
+                                    }else if(item == null)
+                                    {
+                                        <iframe id="youtubeFrame" 
+                                            src="@Model.MovieDetails.PosterPath"
+                                            frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                        </iframe>
+                                        <div class="card" style="background-image: url('@Model.MovieDetails.PosterPath');width:500px;height:600px;"></div>
+                                        
+                            
+                                       
+                                    }
+                                }
+                        </div>
+                        @* =============================================== *@
+                    </div>
+                    @* -------------------------------------------------------------------------- *@
+                    @* -------------------------------------------------------------------------- *@
+                </div>
+            </div>
+
+
+            @* =========================================================================================================== *@
+
+            <div class="row" id="cardTwo">
+                <div class="col">
+                    @* -------------------------------------------------------------------------- *@
+                    <div id="MovieDetail"> 
+                        @* =============================================== *@
+                        <div class="title">Information about the @Model.MovieDetails.Title</div>
+                        @* =============================================== *@
+                        <div class="posterRegion">
+                            <div class="row">
+
+                                <div class="col-lg-3 col-md-4 col-sm-3">
+                                    <div class="card poster" style="background-image: url('@Model.MovieDetails.PosterPath');"></div>
+                                </div>
+                                <div class="col-lg-9">
+
+                                    <div class="card" id="posterText">
+                                        @* ==================== *@
+                                        <p>@Model.MovieDetails.Overview</p>
+                                        @* ==================== *@
+                                        <table class="IMDB">
+                                            <thead>
+
+                                                <tr>
+                                                    <th>
+                                                        <div class="ImbbSection">
+                                                            IMDb
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="ImdbText">
+                                                            <p class="point">
+                                                                <i class="fa-solid fa-star"></i>
+                                                            </p>
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="ImdbText">
+                                                            <p class="point">@Math.Round(Model.MovieDetails.VoteAverage,1)</p>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+
+                                            </thead>
+                                        </table>
+                                        @* ==================== *@                        
+                                        <table class="info">
+                                            <thead>
+                                                <tr id="str">
+                                                    <th><div class="btn" id="firstColumn">Minute</div></th>
+                                                    <th id="secondColumn">@Model.MovieDetails.Runtime Minute</th>
+                                                </tr>
+                                                <tr id="str">
+                                                    <th><div class="btn" id="firstColumn">Tracking</div></th>
+                                                    <th id="secondColumn">@Model.MovieDetails.VoteCount Tracking</th>
+                                                </tr>
+                                                <tr id="str">
+                                                    <th><div class="btn" id="firstColumn">Original Language </div></th>
+                                                    <th id="secondColumn">@Model.MovieDetails.OriginalLanguage</th>
+                                                
+                                                <tr id="str">
+                                                    <th><div class="btn" id="firstColumn">Site</div></th>
+                                                    <th id="secondColumn">
+                                                        <a href="@Model.MovieDetails.Homepage">Click For The Site Path</a>
+                                                    </th>
+                                                </tr>
+                                                <tr id="str">
+                                                    <th><div class="btn" id="firstColumn">Year-Country</div></th>
+                                                    <th class="btn" id="secondColumn"id="secondColumn">@Model.MovieDetails.ReleaseDate.Value.Year.ToString()</th>
+                                                    @foreach(var country in Model.MovieDetails.OriginCountry)
+                                                    {
+                                                        <th class="btn" id="secondColumn">@country</th>
+                                                    }
+                                                </tr>
+                                                <tr id="str">
+                                                    <th><div class="btn" id="firstColumn">Types</div></th>
+                                                    @foreach(var genre in Model.MovieDetails.Genres)
+                                                    {
+                                                        <th class="btn" id="secondColumn">@genre.Name</th>
+                                                    }
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                        @* ==================== *@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @* =============================================== *@
+                    </div>
+                    @* -------------------------------------------------------------------------- *@
+                </div>
+            </div>
+
+            @* =========================================================================================================== *@
+
+            @* =========================================================================================================== *@
+            <div class="row">
+                <div class="col" id="creditContainer">
+                    <div class="card-container">
+                        <div class="scrollable-cards">
+                            @foreach(var item in Model.moviecredits.castList)
+                            {
+                                if(item.ProfilePath is null)
+                                {
+                                    <div class="card title">
+                                        <div class="card-body bg-secondary">
+                                            <p>@item.OriginalName</p>
+                                            <p>@item.Name</p>
+                                            <p>@item.KnownForDepartment</p>
+                                        </div>
+                                    </div>
+                                }
+                                else{
+                                    <div class="card title">
+                                        <img src="https://image.tmdb.org/t/p/w400@(item.ProfilePath)">
+                                        <div class="card-body">
+                                            <p>@item.OriginalName</p>
+                                            <p>@item.Name</p>
+                                            <p>@item.KnownForDepartment</p>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @* =========================================================================================================== *@
+            <div class="row" id="cardThree">
+                <div class="col">
+                    <div class="card-container" id="similarContainer">
+                        <div class="scrollable-cards">
+                            @foreach(var card in Model.MovieSimilar.MSimilar)
+                            {
+                                if(card != null)
+                                {
+                                    
+                                    <div class="poster" style="background-image: url('@card.PosterPath');">
+                                  
+                                        <a asp-action="MovieDetails" asp-route-id="@card.Id">
+                                            <div class="point">
+                                                <p><i class="fa-solid fa-star"></i>@card.VoteAverage</p>
+                                            </div>
+                                            <div class="year">
+                                                <p><i class="fa-solid fa-star"></i>@card.ReleaseDate.Year</p>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>@card.Title</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            @* =========================================================================================================== *@
+
+            @* =========================================================================================================== *@
+            <div class="row" id="cardFour">
+                <div class="col">
+               
+                    <div class="container" id="Comments">
+                        <div class="title">Comments</div>
+                    </div>
+                
+                </div>
+            </div>
+            @* =========================================================================================================== *@
+
+   
+</div>

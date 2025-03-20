@@ -1,0 +1,238 @@
+
+
+
+
+@model  ResultPage
+
+
+@* =========================================================================================================== *@
+<div class="container" id="details">
+
+    <div class="row" id="cardOne">
+        <div class="col">
+            @* -------------------------------------------------------------------------- *@
+            <div id="MovieWatch"> 
+                @* =============================================== *@
+                <div id="title">
+                    Watch the @Model.TvDetails.Name
+                </div>
+                @* =============================================== *@
+                <div id="watchButtons">
+                    <div class="btn">Trailer</div>
+                    <div class="btn">Watch</div>
+                </div>
+                @* =============================================== *@
+                <div id="videoContainer">
+              
+                        @foreach(var item in Model.SeriesVideo.videoResults)
+                        {
+                            if(item.Site == "YouTube")
+                            {
+                                <iframe id="youtubeFrame" 
+                                    src="https://www.youtube.com/embed/@item.Key"
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                                break;
+                            }else if(item == null)
+                            {
+                                <img src="@Model.TvDetails.BackdropPath" alt="">
+
+                            }else{
+
+                                <iframe id="youtubeFrame" 
+                                    src="https://www.@(item.Site).com/embed/@item.Key"
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                                break;
+                            }
+                        }
+                </div>
+                @* =============================================== *@
+            </div>
+            @* -------------------------------------------------------------------------- *@
+            @* -------------------------------------------------------------------------- *@
+        </div>
+    </div>
+
+
+
+    @* =========================================================================================================== *@
+
+    <div class="row" id="cardTwo">
+        <div class="col">
+            @* -------------------------------------------------------------------------- *@
+            <div id="MovieDetail"> 
+                @* =============================================== *@
+                <div class="title">Information about the  @Model.TvDetails.Name</div>
+                @* =============================================== *@
+                <div class="posterRegion">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="card poster" style="background-image: url('@Model.TvDetails.PosterPath');">
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="card" id="posterText">
+                                @* ==================== *@
+                                <p>@Model.TvDetails.Overview</p>
+                                @* ==================== *@
+                                <table class="IMDB">
+                                    <thead>
+
+                                        <tr>
+                                            <th>
+                                                <div class="ImbbSection">
+                                                    IMDb
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="ImdbText">
+                                                    <p class="point">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </p>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="ImdbText">
+                                                    <p class="point">@Math.Round(Model.TvDetails.VoteAverage,1)</p>
+                                                </div>
+                                            </th>
+                                        </tr>
+
+                                    </thead>
+                                </table>
+                                @* ==================== *@                        
+                                <table class="info">
+                                    <thead>
+                                        <tr id="str">
+                                            <th><div class="btn" id="firstColumn">Tracking</div></th>
+                                            <th id="secondColumn">@Model.TvDetails.VoteCount Tracking</th>
+                                        </tr>
+                                        <tr id="str">
+                                            <th><div class="btn" id="firstColumn">Orginal Language</div></th>
+                                            <th id="secondColumn">@Model.TvDetails.OriginalLanguage</th>
+                                        
+                                        <tr id="str">
+                                            <th><div class="btn" id="firstColumn">Site</div></th>
+                                            <th id="secondColumn">
+                                                <a href="@Model.TvDetails.Homepage">Click For The Site Path</a>
+                                            </th>
+                                        </tr>
+                                        <tr id="str">
+                                            <th><div class="btn" id="firstColumn">Year-Country</div></th>
+                                            <th class="btn" id="secondColumn"id="secondColumn">@Model.TvDetails.FirstAirDate</th>
+                                            @foreach(var country in Model.TvDetails.OriginCountry)
+                                            {
+                                                <th class="btn" id="secondColumn">@country</th>
+                                            }
+                                        </tr>
+                                        <tr id="str">
+                                            <th><div class="btn" id="firstColumn">Types</div></th>
+                                            @foreach(var genre in Model.TvDetails.Genres)
+                                            {
+                                                <th class="btn" id="secondColumn">@genre.Name</th>
+                                            }
+                                        </tr>
+                                        <tr id="str">
+                                            <th><div class="btn" id="firstColumn">Total Season</div></th>
+                                            <th id="secondColumn">@Model.TvDetails.NumberOfSeasons Sezon</th>
+                                        </tr>
+                                        <tr id="str">
+                                            <th><div class="btn" id="firstColumn">Total Section</div></th>
+                                            <th id="secondColumn">@Model.TvDetails.NumberOfEpisodes Section</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                @* ==================== *@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @* =============================================== *@
+            </div>
+            @* -------------------------------------------------------------------------- *@
+        </div>
+    </div>
+
+    @* =========================================================================================================== *@
+    <div class="row">
+        <div class="col" id="creditContainer">
+            <div class="card-container">
+                <div class="scrollable-cards">
+                    @foreach(var item in Model.tvcredits.castList)
+                    {
+                        if(item.ProfilePath is null)
+                        {
+                            <div class="card title">
+                                <div class="card-body bg-secondary">
+                                    <p>@item.OriginalName</p>
+                                    <p>@item.Name</p>
+                                    <p>@item.KnownForDepartment</p>
+                                </div>
+                            </div>
+                        }
+                        else{
+                            <div class="card title">
+                                <img src="https://image.tmdb.org/t/p/w400@(item.ProfilePath)">
+                                <div class="card-body">
+                                    <p>@item.OriginalName</p>
+                                    <p>@item.Name</p>
+                                    <p>@item.KnownForDepartment</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* =========================================================================================================== *@
+    <div class="row" id="cardThree">
+        <div class="col">
+            <div class="card-container" id="similarContainer">
+                <div class="scrollable-cards">
+        
+                    @foreach(var card in Model.SerieSimilar.SSimilar)
+                    {
+                        if(card != null)
+                        {
+                            <div class="poster" style="background-image: url('@card.PosterPath');">
+                            
+                                <a asp-action="MovieDetails" asp-route-id="@card.Id">
+                                    <div class="point">
+                                        <p><i class="fa-solid fa-star"></i>@card.VoteAverage</p>
+                                    </div>
+                                    <div class="year">
+                                        <p><i class="fa-solid fa-star"></i>@card.FirstAirDate.Year</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>@card.Name</p>
+                                    </div>
+                                </a>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>
+    @* =========================================================================================================== *@
+    @* =========================================================================================================== *@
+    <div class="row" id="cardFour">
+        <div class="col">
+        
+            <div class="container" id="Comments">
+                <div class="title">Comments</div>
+            </div>
+        
+        </div>
+    </div>
+    @* =========================================================================================================== *@
+
+</div>

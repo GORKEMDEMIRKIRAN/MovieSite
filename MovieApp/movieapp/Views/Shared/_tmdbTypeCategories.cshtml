@@ -1,0 +1,40 @@
+
+
+@model AllTypeList
+
+
+<div class="list-group" id="Types">
+
+    <div class="row">
+
+        <div class="col-6 col-lg-6 col-md-12 col-sm-12" id="MovieType">
+
+            <div class="row sectionName">
+                <i class="fa-solid fa-list"></i>
+                <h5>Movie body Types</h5>
+            </div>
+            @foreach (var type in Model.Movie.GenresList)
+            {
+                <div class="row">
+                    <a class="btn btn-sm" asp-action="MovieTypePage" asp-route-id="@type.Id" asp-route-name="@type.TypeName">@type.TypeName</a>
+                </div>
+            }
+        </div>
+
+        <div class="col-6" id="SerieType">
+
+            <div class="row sectionName">
+                <i class="fa-solid fa-list"></i>
+                <h5>Serie body Types</h5>
+            </div>
+            @foreach(var type in Model.Tv.GenresList)
+            {
+                <div class="row">
+                    <a class="btn btn-sm" asp-action="SerieTypePage" asp-route-id="@type.Id" asp-route-name="@type.TypeName">@type.TypeName</a>
+                </div>
+            }
+
+        </div>
+
+    </div>
+</div>

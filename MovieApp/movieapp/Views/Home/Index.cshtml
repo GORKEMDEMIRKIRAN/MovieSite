@@ -1,0 +1,45 @@
+﻿
+
+
+
+
+
+
+@* Movie modelini liste şeklinde aldık. *@
+@model List<Movie>
+
+
+<div class="films-card">
+    <div class="row">
+        <div class="col-9">
+            <div class="row row-cols-sm-3 row-cols-md-4 row-cols-lg-5" id="cards">
+                @* ============ *@
+
+
+                @foreach(var item in Model){
+                    <div class="col">
+                        <div class="card" style="background-image: url('/Img/@item.Image');">
+                            <div class="card-body">
+                                @item.Year-@item.Imdb
+                                @item.MovieName
+                                @item.Languages-@item.Country
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                @* ============ *@
+            </div>
+        </div>
+        <div class="col-3" id="categories">
+            <div class="list-group">
+                <div class="row mb-2">
+                    <i class="fa-solid fa-list"></i>
+                    <h5>Movie body Types</h5>
+                </div>
+                @* shared/Component dosyası altında tanımaldığımız dosya ismini alır. *@
+                @await Component.InvokeAsync("Categories")
+            </div>
+        </div>
+    </div>
+</div>
