@@ -17,113 +17,113 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = movieapp
 build_property.RootNamespace = movieapp
-build_property.ProjectDir = C:\Users\gorke\Desktop\MVC\MovieApp\movieapp\
+build_property.ProjectDir = C:\Users\gorke\Desktop\GITHUB-SECTIONS\MovieSite\MovieApp\movieapp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\gorke\Desktop\MVC\MovieApp\movieapp
+build_property.MSBuildProjectDirectory = C:\Users\gorke\Desktop\GITHUB-SECTIONS\MovieSite\MovieApp\movieapp
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Home/Index.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Shared/Components/Categories/Default.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Shared/Components/Categories/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcmllc1xEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Shared/_Layout.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Shared/_Navbar.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Shared/_Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Shared/_Slider.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Shared/_Slider.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TbGlkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Shared/_tmdbCategories.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Shared/_tmdbCategories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF90bWRiQ2F0ZWdvcmllcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Shared/_tmdbTypeCategories.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Shared/_tmdbTypeCategories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF90bWRiVHlwZUNhdGVnb3JpZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/MovieDayTrend.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/MovieDayTrend.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxNb3ZpZURheVRyZW5kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/MovieDetails.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/MovieDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxNb3ZpZURldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/MovieNowPlaying.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/MovieNowPlaying.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxNb3ZpZU5vd1BsYXlpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/MoviePopular.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/MoviePopular.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxNb3ZpZVBvcHVsYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/MovieTopRated.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/MovieTopRated.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxNb3ZpZVRvcFJhdGVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/MovieTypePage.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/MovieTypePage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxNb3ZpZVR5cGVQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/MovieUpComing.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/MovieUpComing.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxNb3ZpZVVwQ29taW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/MovieWeekTrend.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/MovieWeekTrend.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxNb3ZpZVdlZWtUcmVuZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/SeriesDetails.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/SeriesDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxTZXJpZXNEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/SeriesPopular.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/SeriesPopular.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxTZXJpZXNQb3B1bGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/SeriesTopRated.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/SeriesTopRated.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxTZXJpZXNUb3BSYXRlZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/SerieTypePage.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/SerieTypePage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxTZXJpZVR5cGVQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/TvDayTrend.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/TvDayTrend.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxUdkRheVRyZW5kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/TvNowPlaying.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/TvNowPlaying.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxUdk5vd1BsYXlpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/TvUpComing.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/TvUpComing.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxUdlVwQ29taW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/Tmdb/TvWeekTrend.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/Tmdb/TvWeekTrend.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG1kYlxUdldlZWtUcmVuZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/_ViewImports.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gorke/Desktop/MVC/MovieApp/movieapp/Views/_ViewStart.cshtml]
+[C:/Users/gorke/Desktop/GITHUB-SECTIONS/MovieSite/MovieApp/movieapp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

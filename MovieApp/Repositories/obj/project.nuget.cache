@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+82/66y4gs8=",
+  "dgSpecHash": "XPido0t7ZZ8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gorke\\Desktop\\MVC\\MovieApp\\Repositories\\Repositories.csproj",
+  "projectFilePath": "C:\\Users\\gorke\\Desktop\\GITHUB-SECTIONS\\MovieSite\\MovieApp\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gorke\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\gorke\\.nuget\\packages\\microsoft.aspnetcore\\2.3.0\\microsoft.aspnetcore.2.3.0.nupkg.sha512",

@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gorke\\Desktop\\MVC\\MovieApp\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\gorke\\Desktop\\GITHUB-SECTIONS\\MovieSite\\MovieApp\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\gorke\\Desktop\\MVC\\MovieApp\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Users\\gorke\\Desktop\\GITHUB-SECTIONS\\MovieSite\\MovieApp\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\gorke\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gorke\\Desktop\\MVC\\MovieApp\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\gorke\\Desktop\\GITHUB-SECTIONS\\MovieSite\\MovieApp\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

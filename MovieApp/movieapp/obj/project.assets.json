@@ -6570,11 +6570,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gorke\\Desktop\\MVC\\MovieApp\\movieapp\\movieapp.csproj",
+      "projectUniqueName": "C:\\Users\\gorke\\Desktop\\GITHUB-SECTIONS\\MovieSite\\MovieApp\\movieapp\\movieapp.csproj",
       "projectName": "movieapp",
-      "projectPath": "C:\\Users\\gorke\\Desktop\\MVC\\MovieApp\\movieapp\\movieapp.csproj",
+      "projectPath": "C:\\Users\\gorke\\Desktop\\GITHUB-SECTIONS\\MovieSite\\MovieApp\\movieapp\\movieapp.csproj",
       "packagesPath": "C:\\Users\\gorke\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gorke\\Desktop\\MVC\\MovieApp\\movieapp\\obj\\",
+      "outputPath": "C:\\Users\\gorke\\Desktop\\GITHUB-SECTIONS\\MovieSite\\MovieApp\\movieapp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6596,11 +6596,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\gorke\\Desktop\\MVC\\MovieApp\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\gorke\\Desktop\\MVC\\MovieApp\\Entities\\Entities.csproj"
+            "C:\\Users\\gorke\\Desktop\\GITHUB-SECTIONS\\MovieSite\\MovieApp\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\gorke\\Desktop\\GITHUB-SECTIONS\\MovieSite\\MovieApp\\Entities\\Entities.csproj"
             },
-            "C:\\Users\\gorke\\Desktop\\MVC\\MovieApp\\Repositories\\Repositories.csproj": {
-              "projectPath": "C:\\Users\\gorke\\Desktop\\MVC\\MovieApp\\Repositories\\Repositories.csproj"
+            "C:\\Users\\gorke\\Desktop\\GITHUB-SECTIONS\\MovieSite\\MovieApp\\Repositories\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\gorke\\Desktop\\GITHUB-SECTIONS\\MovieSite\\MovieApp\\Repositories\\Repositories.csproj"
             }
           }
         }

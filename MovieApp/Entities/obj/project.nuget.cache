@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8pG05FND+sM=",
+  "dgSpecHash": "aT57qH8HIbE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gorke\\Desktop\\MVC\\MovieApp\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\gorke\\Desktop\\GITHUB-SECTIONS\\MovieSite\\MovieApp\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gorke\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
