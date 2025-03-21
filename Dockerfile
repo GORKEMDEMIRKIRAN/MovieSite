@@ -5,10 +5,10 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
-COPY ["MovieApp/movieapp/movieapp.csproj", "movieapp/"]
+COPY ["MovieApp/movieapp/movieapp.csproj", "MovieApp/movieapp/"]
 RUN dotnet restore "MovieApp/movieapp/movieapp.csproj"
 COPY . .
-WORKDIR "/src/movieapp"
+WORKDIR "/src/MovieApp/movieapp"
 RUN dotnet build "movieapp.csproj" -c Release -o /app/build
 
 FROM build AS publish
