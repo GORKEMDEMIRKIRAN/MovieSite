@@ -1,11 +1,6 @@
 
 
 
-
-
-using Repositories.ServerRepository.Abstract;
-using Repositories.ServerRepository.Concrete.EfCore;
-
 // tmdb yolları
 using Repositories.TmdbApi.Abstract;// ınterface yolu
 using Repositories.TmdbApi.Concrete;// repository yolu
@@ -16,9 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//AddScoped() metodu, her HTTP isteği için yeni bir servis örneği oluşturur. Bu, servislerin her istekte farklı verilerle çalışmasını sağlar.
-builder.Services.AddScoped<IMovieRepository,EfCoreMovieRepository>();
-builder.Services.AddScoped<ICategoryRepository,EfCoreCategoryRepository>();
+
 
 // tmdb api kullanmak için "TmdbApi" altındaki abstract,concrete bölümlerini ekleyelim.
 builder.Services.AddHttpClient<TmdbRepository>();
@@ -40,9 +33,6 @@ app.UseRouting();
 
 app.UseStaticFiles();
 
-// database veri ekleme
-//using movieapp.Data.Concrete.EfCore; yolu ile bağlandı.
-SeedDatabase.Seed();
 
 
 app.UseAuthorization();

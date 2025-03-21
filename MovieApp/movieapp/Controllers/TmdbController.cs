@@ -14,7 +14,6 @@ using System.Runtime.CompilerServices;
 using Repositories.TmdbApi.Abstract;        // Tmdb repository interface
 using Repositories.TmdbApi.Concrete;        // Tmdb repository
 using Entities.TmdbModels;                  // Entities model way
-using Entities.RepositoryModels;            // Entities database way
 //=======================================
 
 
